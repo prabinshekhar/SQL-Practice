@@ -11,3 +11,12 @@ repeats.
 • Display all the information for those customers with a
 grade of 200. 
 -> SELECT * FROM CUSTOMERS WHERE GRADE=200;
+
+• Display the order number, order
+date and the purchase amount for
+order(s) which will be delivered by
+the salesman with ID 5001.
+
+-> SELECT ORD_NO , ORD_DATE , PURCHASE_AMT FROM ORDERS WHERE SALESMAN_ID=5001;
+
+
