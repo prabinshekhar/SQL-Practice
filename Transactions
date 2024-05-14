@@ -1,0 +1,18 @@
+How to Implement Transactions in SQL?
+BEGIN TRANSACTION: Marks the start of an explicit or local transaction.
+Syntax: BEGIN TRANSACTION transaction_name;
+SET TRANSACTION: Sets properties for the current transaction (e.g., isolation level).
+Syntax: SET TRANSACTION [READ WRITE | READ ONLY];
+COMMIT: Records all changes since the last COMMIT or ROLLBACK.
+Example: Delete records from a table where age = 20 and then COMMIT the changes:
+SQL
+
+DELETE FROM Student WHERE AGE = 20;
+COMMIT;
+
+ROLLBACK: Reverses changes if any error occurs within a transaction.
+Example: Delete records where age = 20 and then ROLLBACK:
+SQL
+
+DELETE FROM Student WHERE AGE = 20;
+ROLLBACK;
