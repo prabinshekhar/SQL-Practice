@@ -1,0 +1,13 @@
+• Display name and commission of all the salesmen
+-> SELECT NAME,COMMISSION FROM SALESMEN;
+
+.Retrieve salesman id of all salesmen from orders table without any
+repeats.
+-> SELECT DISTINCT SALESMEN_ID FROM ORDERS;
+
+• Display names and city of salesman, who belongs to the city of Paris.
+-> SELECT NAME , CITY FROM SALESMEN WHERE CITY='Paris';
+
+• Display all the information for those customers with a
+grade of 200. 
+-> SELECT * FROM CUSTOMERS WHERE GRADE=200;
